@@ -1,13 +1,61 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+label {
+  color: #66665d;
+}
+input[type="number"] {
+  box-sizing: border-box;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 13px;
+  outline: none;
+}
+ul {
+  font-size: 1rem;
+  background-color: #f5f5f2;
+  padding: 0;
+  min-height: 50px;
+  border: 1px solid #dbdbd3;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #66665d;
+  list-style-type: none;
+  padding: 10px;
+  cursor: default;
+  border-bottom: 1px solid #dbdbd3;
+}
+
+ul li .Interno {
+  border-bottom: none;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Game {
+  display: flex;
+  flex-direction: column;
+}
+.Console__Game {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.Result__Game {
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+  margin: 0 50px;
 }
